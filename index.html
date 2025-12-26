@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script>
+      const name = 'qwer0002' //여기에 자기 엔트리아이디를 입력하세요
+      const userid = '64c090ecc3f0b3002bce81f2' //여기에 자기 유저아이디를 입력하세요 (엔트리콘솔창에 user._id를 치면 자신의 유저아이디를 볼수있어요)
+      const gitname = 'pyu778' //여기에 자기 깃허브아이디를 입력하세요 (깃허브계정이 없으면 그냥 avocad5를 입력하세요<ㅍ)
+      const nickname = '평양갱' //여기에 자기 별명을 입력하세요 
+      const myment = '치킨 맛있다' //여기에 상태메시지를 입력하세요 
+      const mywork = '알까기의왕' //여기에 자신의 대표작품을 입력하세요
+      const career = '몰루' //여기에 자신의 경력을 입력하세요
+      const explanation = '치킨먹고싶닭' //여기에 자기소개를 입력하세요
+      const maincolor = '#44DAFF' //여기에 메인컬러를 입력하세요 #87FFB7
+      const subcolor = '#BFFFFC' //여기에 서브컬러를 입력하세요
+      const projectname = ['실시간 방송']; //여기에 자기 엔트리작품 이름을 입력하세요 (저는 3개만 했지만 여러분은 엄청 많이 하셔도 되요)
+      const projectment = ['방송작'] //여기에 자기 엔트리작품 소개를 입력하세요 
+      const projectid = ['69049756262a2776ce9864a3'] //여기에 자기 엔트리작품 id를 입력하세요
+      const theme = 'dark' //light또는 dark를 입력하세요
+      
+      
+      function load(){
+        for(var i = 0; i<projectname.length; i++){
+          document.getElementsByClassName('project')[0].innerHTML += `<a href="https://playentry.org/${name}/${projectid[i]}"><img class="pimg" src="https://playentry.org/uploads/thumb/${projectid[i].substring(0,4)}/${projectid[i]}.png"><div class="pdiv"><p class="pname"><strong>${projectname[i]}</strong></p><p class="pment">${projectment[i]}</p></div></a>`
+        }
+        var avatar = `https://playentry.org/uploads/profile/${userid.substring(0,2)}/${userid.substring(2,4)}/avatar_${userid}.png`
+        document.title = `${nickname}의 공식사이트`
+        document.qu다소개: 
+      </div>
+    </div>
+    <div class="projecttext">my projects</div>
+    <div class="project">
 
+    </div>
+    <svg class="foot" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+      <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
+      <div class="footer">
+      </div>
+    </svg>
+  </body>
+  <script>load();if(theme=='dark'){darkmode();}</script>
+</html>
